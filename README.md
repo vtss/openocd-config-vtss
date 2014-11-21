@@ -17,6 +17,7 @@ serval1-ref.cfg | Serval1 Reference (VSC5616EV, VSC5617EV, VSC5618EV)
 serval1-nid.cfg | Serval1 NID (VSC5619EV)
 serval2-nid.cfg | Serval2 NID (VSC5629EV)
 jaguar2.cfg     | Jaguar2, Lynx2 (VSC5628EV, VSC5627EV)
+servalt-ref.cfg | ServalT (VSC7415)
 
 ## JTAG Interface
 
