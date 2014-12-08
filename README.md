@@ -21,7 +21,7 @@ servalt-ref.cfg | ServalT (VSC7415)
 
 ## JTAG Interface
 
-The boards are equipped mips a MIPS EJTAG standard 14-pin JTAG header.
+The boards are equipped with a MIPS EJTAG standard 14-pin JTAG header.
 
 You should be able to use any JTAG interface supported by OpenOCD, but
 the boards have been specifically verified with
@@ -83,15 +83,25 @@ the `/dev/ttyUSBx` USB tty port (`x` varies).
 
 Binary distributions may be obtained at
 http://www.freddiechopin.info/en/download.
+(At the moment, Flyswatter2 has been tested successfully on Windows 7 with OpenOCD v0.8.0).
+(See also http://www.freddiechopin.info/en/articles/34-news/92-openocd-w-wersji-080).
 
 To use OpenOCD with Flyswatter2 (or similar FTDI-based interface), you
-should install the WinUSB driver, possibly using
+should install the WinUSB driver, and one way to do this is by using
 [Zadig](http://zadig.akeo.ie/).
 
-(See http://www.freddiechopin.info/en/articles/34-news/92-openocd-w-wersji-080).
+The driver installation procedure is documented in
+"openocd-0.8.0\drivers\libusb-1.0 drivert.txt".
+Follow the instructions and install the WinUSB driver
+for Flyswatter2 Interface 0 (Interface 1 is the USB to Serial UART).
+(Step 4 is necessary in order to see the interfaces in the drop-down list, 
+if Windows have automatically installed drivers for them).
+
+Finally, clone the openocd-config-vtss into a directory called `vtss` 
+located inside the `scripts` directory of OpenOCD.
 
 You should now be able to start OpenOCD with the arguments described
-earlier in this document.
+later in this document.
 
 ## Using OpenOCD
 
