@@ -93,7 +93,7 @@ should install the WinUSB driver, and one way to do this is by using
 The driver installation procedure is documented in
 "openocd-0.8.0\drivers\libusb-1.0 drivert.txt".
 Follow the instructions and install the WinUSB driver
-for both Flyswatter2 interfaces (Interface 0 and 1).
+for Flyswatter2 Interface 0 (Interface 1 is the USB to Serial UART).
 (Step 4 is necessary in order to see the interfaces in the drop-down list, 
 if Windows have automatically installed drivers for them).
 
